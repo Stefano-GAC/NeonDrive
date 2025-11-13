@@ -1,94 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NeonDrive</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Inter&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="logo">NeonDrive</div>
-      <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Coches</a>
-        <a href="#">Visitas</a>
-      </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NeonDrive</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
 
-    <br />
-    <!-- Sección dividida -->
-    <section class="intro-section">
-      <div class="intro-text">
-        <h1>
-          El futuro sobre ruedas
-        </h1>
-        <p>
-          NeonDrive impulsa la innovación en la industria automotriz mediante
-          tecnología de vanguardia. Nos especializamos en vehículos eléctricos,
-          soluciones de carga inteligentes y software avanzado para ofrecer
-          experiencias de conducción sostenibles, seguras y conectadas. Nuestro
-          compromiso es transformar la movilidad del futuro, combinando diseño,
-          eficiencia y sostenibilidad para nuestros clientes en todo el mundo.
-        </p>
-        <div class="buttons">
-          <button class="btn-marron">Catálogo</button>
-          <button class="btn-azul">Agenda una visita!</button>
-        </div>
-      </div>
-      <div class="intro-image">
-        <img src="images/interior.jpg" alt="Interior del coche" />
-      </div>
-    </section>
-    <br />
-    <!-- Carrusel -->
-    <section class="carousel-section">
-      <div class="carousel-container">
-        <div class="carousel-track">
-          <img src="images/tesla1.jpg" alt="Tesla rojo" />
-          <img src="images/tesla2.jpg" alt="Tesla negro" />
-          <img src="images/tesla3.jpg" alt="Tesla blanco" />
-        </div>
-      </div>
-    </section>
-    <br />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron&family=Inter&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header id="header"></header>
+        <!-- Sección dividida -->
+        <section class="intro-section">
+            <div class="intro-text">
+                <h1>El futuro sobre ruedas</h1>
+                <p>
+                    NeonDrive impulsa la innovación en la industria automotriz
+                    mediante tecnología de vanguardia. Nos especializamos en
+                    vehículos eléctricos, soluciones de carga inteligentes y
+                    software avanzado para ofrecer experiencias de conducción
+                    sostenibles, seguras y conectadas. Nuestro compromiso es
+                    transformar la movilidad del futuro, combinando diseño,
+                    eficiencia y sostenibilidad para nuestros clientes en todo
+                    el mundo.
+                </p>
+                <div class="buttons">
+                    <button class="btn-marron">Catálogo</button>
+                    <button class="btn-azul">Agenda una visita!</button>
+                </div>
+            </div>
+            <div class="intro-image">
+                <img src="images/interior.jpg" alt="Interior del coche" />
+            </div>
+        </section>
+        <br />
+        <!-- Carrusel -->
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <img src="images/tesla1.jpg" alt="Tesla rojo" />
+                    <img src="images/tesla2.jpg" alt="Tesla negro" />
+                    <img src="images/tesla3.jpg" alt="Tesla blanco" />
+                </div>
+            </div>
+        </section>
+        <br />
 
-    <!-- Footer -->
-    <footer>
-      <div class="footer-section">
-        <h3>Contacto</h3>
-        <p>Calle Princesa 3</p>
-        <p>Madrid, 28034</p>
-        <p>neondrive@gmail.com</p>
-        <p>654 45 43 43</p>
-      </div>
-      <div class="footer-section">
-        <h3>Redes Sociales</h3>
-        <p>Tiktok</p>
-        <p>Instagram</p>
-      </div>
-      <div class="copyright">
-        ©2025 Pulso Verde. Todos los derechos reservados
-      </div>
-    </footer>
+        <footer id="footer"></footer>
 
-    <script>
-      const track = document.querySelector(".carousel-track");
-      let index = 0;
+        <script>
+            const track = document.querySelector('.carousel-track');
+            let index = 0;
 
-      setInterval(() => {
-        index = (index + 1) % track.children.length;
-        track.style.transform = `translateX(-${index * 100}%)`;
-      }, 3000);
-    </script>
-  </body>
+            setInterval(() => {
+                index = (index + 1) % track.children.length;
+                track.style.transform = `translateX(-${index * 100}%)`;
+            }, 3000);
+        </script>
+
+        <script>
+            incluirHTML('#header', 'header.html');
+            incluirHTML('#footer', 'footer.html');
+        </script>
+    </body>
 </html>
