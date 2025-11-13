@@ -5,6 +5,10 @@ body {
     color: #fff;
 }
 
+.bg-neondrive {
+    background-color: #052b4d !important; /* o el color que tú quieras */
+}
+
 /* Intro Section */
 .intro-section {
     display: flex;
