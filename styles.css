@@ -164,3 +164,88 @@ footer {
         height: 250px;
     }
 }
+
+/*Visitas*/
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: white;
+  color: #fff;
+}
+
+.banner {
+  background-color: #063458;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.banner h2 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+}
+
+.banner p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: -2rem auto 3rem;
+  background: white;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.btn-confirm {
+  background-color: #063458 !important;
+  color: white !important;
+  border: none !important;
+  width: 100%;
+}
+
+.btn-catalog {
+  background-color: #753f29 !important;
+  color: white !important;
+  border: none !important;
+  width: 100%;
+}
+
+.info-cards {
+  max-width: 900px;
+  margin: 3rem auto 4rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  background-color: #063458;
+  color: white;
+  flex: 1 1 250px;
+  padding: 1.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.info-card h5 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
