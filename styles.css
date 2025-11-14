@@ -305,6 +305,8 @@ article img {
     color: white;
     font-weight: 600;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
 
 .btn-catalogo:hover {
